@@ -7,5 +7,10 @@ DTEND:@{outputs('formatEndTime')}
 SUMMARY:@{triggerBody()?['Title']}
 DESCRIPTION: @{triggerBody()?['Description']}
 LOCATION:Online
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:REMINDER
+TRIGGER:-PT15M
+END:VALARM
 END:VEVENT
 END:VCALENDAR
